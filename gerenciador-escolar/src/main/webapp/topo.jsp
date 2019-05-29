@@ -33,7 +33,8 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tabelas Auxiliares<span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="#">Departamento</a></li>
-          <li><a href="#">Disciplina</a></li>
+          <li><a href="curso.jsp">Curso</a></li>
+          <li><a href="disciplina.jsp">Disciplina</a></li>
           <li><a href="#">Gênero</a></li>
         </ul>
     </li> 
