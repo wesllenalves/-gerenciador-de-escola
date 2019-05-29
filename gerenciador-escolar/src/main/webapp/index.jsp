@@ -43,7 +43,7 @@
   
                 
                 
-        <h2>&nbsp;Bem-vindo!!!</h2>
+        <h2>&nbsp;Bem-vindo!!! Seu sistema e maravilhoso</h2>
         
             </div>
               
