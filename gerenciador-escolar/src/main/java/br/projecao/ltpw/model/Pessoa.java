@@ -42,11 +42,12 @@ public class Pessoa  implements java.io.Serializable {
      private String sobrenome;
      private String usuario;
      private Aluno aluno;
+     private Professor professor;
 
     public Pessoa() {
     }
 
-    public Pessoa(Date dataIngresso, Date dataNascimento, String email, Set<Endereco> enderecos, Genero genero, String matricula, String nome, String senha, String sobrenome, String usuario, Aluno aluno) {
+    public Pessoa(Date dataIngresso, Date dataNascimento, String email, Set<Endereco> enderecos, Genero genero, String matricula, String nome, String senha, String sobrenome, String usuario, Aluno aluno, Professor professor) {
        this.dataIngresso = dataIngresso;
        this.dataNascimento = dataNascimento;
        this.email = email;
@@ -58,6 +59,7 @@ public class Pessoa  implements java.io.Serializable {
        this.sobrenome = sobrenome;
        this.usuario = usuario;
        this.aluno = aluno;
+       this.professor = professor;
     }
    
      @Id @GeneratedValue
@@ -182,6 +184,22 @@ public class Pessoa  implements java.io.Serializable {
     public void setAluno(Aluno aluno) {
         this.aluno = aluno;
     }
+
+  
+  
+    @OneToOne(cascade=CascadeType.ALL, fetch=FetchType.EAGER, mappedBy="pessoa")
+    public Professor getProfessor() {
+        return professor;
+    }
+
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
+    }
+    
+
+    
+    
+    
 
 
 
